@@ -1,0 +1,74 @@
+body {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: grey;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0 60px 0 60px;
+}
+
+section{
+  max-width: 800px;
+}
+
+/** Typography ****************************************************************/
+
+h1{
+  color: orange;
+  font-size: 2em;
+  padding:60px 0 20px 0;
+}
+
+h2{
+  font-weight: 700;
+  padding-bottom: 10px;
+  padding-top: 40px;
+}
+
+#schedule ul, #team ul{
+  padding-bottom: 10px;
+}
+
+#schedule h3, #team ul{
+  padding-top: 10px;
+}
+
+h3{
+  color: orange;
+  padding-top: 40px;
+  font-weight:400;
+}
+
+h3:first-child{
+  padding-top: 0px;
+}
+
+p{
+  line-height: 1.5em;
+}
+
+a{
+  text-decoration: none;
+  color: orange;
+}
+
+a:hover{
+  color: red;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 20px 0 60px 0;
+}
+
+/** Images ********************************************************************/

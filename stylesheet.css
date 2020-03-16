@@ -1,0 +1,260 @@
+body {
+  width: 100vw;
+  margin: auto;
+  font-family: sans-serif;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #C7D9E5;
+  overflow-x: hidden;
+  background: #1c2b4a;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+
+nav{
+  position: fixed;
+  left: 0;
+  overflow-x: hidden;
+  padding: 20px 0 20px 0;
+  width: 100%;
+  background: rgba(42, 61, 99, 0.5);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+
+  transition: all 0.5s ease;
+  text-align: right;
+  z-index: 2;
+}
+
+nav:hover{
+  background: rgba(42, 61, 99, 0.8);
+}
+
+.onLink{
+  border-bottom: 3px solid #e9bd1f;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section{
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.topics{
+  flex: 1 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin-bottom: 10px;
+  background: rgba(0,0,0, 0.3);
+  border-radius: 10px;
+  max-width: 800px;
+  width: inherit;
+  margin-bottom: 60px;
+}
+
+.topics:last-child{
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+footer{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  display: flex;
+  padding: 0 0 40px 0;
+}
+
+/** Typography ****************************************************************/
+
+h2{
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 2.5em;
+  font-weight: 700;
+  padding-bottom: 20px;
+  padding-top: 40px;
+  font-size: 1.6em;
+}
+
+h2:first-child{
+  padding-top: 10px;
+}
+
+#schedule ul, #team ul{
+  padding-bottom: 10px;
+}
+
+#schedule h3, #team ul{
+  padding-top: 10px;
+}
+
+h3{
+  color: #56833B;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight:600;
+  font-size: 1.3em;
+}
+
+h3:first-child{
+  padding-top: 0px;
+}
+
+p{
+  line-height: 1.5em;
+  padding-bottom: 10px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+nav a{
+  margin-right: 30px;
+  font-weight:400;
+  color:#C7D9E5;
+  border-bottom: 3px solid rgba(120, 155, 183, 0);
+  padding-bottom: 16px;
+}
+
+nav a:hover{
+  border-bottom: 3px solid rgba(120, 155, 183, 1);
+  transition: all 0.5s ease;
+}
+
+a{
+  text-decoration: none;
+  color: #E9BD1F;
+  font-weight: bold;
+  transition: all 0.5s ease;
+}
+
+a:hover{
+  color: #C7D9E5;
+  border-bottom: 3px solid #789BB7;
+}
+
+.projcontact{
+  font-size: 0.8em;
+  text-align: right;
+}
+
+ul{
+  padding-bottom: 10px;
+}
+
+li{
+  line-height: 1.5em;
+}
+
+/** Images and Design *********************************************************/
+
+header img{
+  width: 90vw;
+  padding: 80px 0 40px 0;
+}
+
+section .textimg{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.textimg img{
+  padding-left: 20px;
+  height: 200px;
+}
+
+img{
+  width: auto;
+}
+
+.logo{
+  width:200px;
+  position: absolute;
+  left: 40px;
+  top: 13px;
+}
+
+html {
+  scrollbar-face-color: #646464;
+  scrollbar-base-color: #646464;
+  scrollbar-3dlight-color: #646464;
+  scrollbar-highlight-color: #646464;
+  scrollbar-track-color: #15223d;
+  scrollbar-shadow-color: #646464;
+  scrollbar-dark-shadow-color: #646464;
+}
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #56833B; } /* Tabs on top and bottom of scrollbar */
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #15223d;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #789BB7; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #646464;}}
+
+/** Form **********************************************************************/
+
+.formtopic{
+  flex: 1 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  margin-bottom: 10px;
+  background: rgba(0,0,0, 0.3);
+  border-radius: 10px;
+  max-width: 800px;
+  width: inherit;
+  margin-bottom: 80px;
+}
+
+form section{
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+label, input, select, textarea{
+  margin: 15px 10px 15px 0;
+  width: 200px;
+}
+
+input, select, textarea{
+  border-style: none;
+  border-radius: 10px;
+  padding: 5px;
+  color:white;
+  background: rgba(0,0,0, 0.3);
+}
+
+.bprocess{
+  align-self: flex-start;
+  width: fit-content;
+  font-family: 'GraphikBold', sans-serif;
+  letter-spacing: 0.5px;
+  border-radius: 10px;
+  background: rgba(120, 155, 183, 0.3);
+  padding: 8px;
+  color: #fff;
+}
+
+.vImgs img{
+  width:14px;
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>The Hard Tech Fund</title>
+  <link rel="icon" href="images/icon.png">
+  <link href="reset.css" rel="stylesheet">
+  <link href="stylesheet.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+  <script src="scriptDonate.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700|Saira+Semi+Condensed&display=swap" rel="stylesheet">
+</head>
+
+<body id="donate">
+  <nav>
+    <a href="index.html"><img src="images/logo.png" alt="Logo" class="logo"></a>
+    <a href="index.html" class="navtitle">Home</a>
+    <a href="involvement.html" class="navinvolvement">Involvement</a>
+    <a href="about.html" class="navabout">About</a>
+    <a href="donate.html" class="navdonate onLink">Donate</a>
+  </nav>
+
+  <div>
+    <header>
+      <img src="images/graphics/banner.PNG" alt="header graphic">
+    </header>
+
+<!-- Section 1 - Form --------------------------------------------------------->
+    <section id="fillform" class="formtopic">
+      <h2>Help Support HTF!</h2><br>
+      <form action="#">
+        <label for="fname">First Name*</label>
+        <section>
+          <input type="text" id="fname" name="fname" placeholder="Rachel">
+          <span id="firstPrompt" class="vImgs"></span>
+        </section>
+
+        <label for="lname">Last Name*</label>
+        <section>
+          <input type="text" id="lname" name="lname" placeholder="Carson">
+          <span id="lastPrompt" class="vImgs"></span>
+        </section>
+
+        <label for="email">Email*</label>
+        <section>
+          <input type="text" id="email" name="email" placeholder="silentspring@gmail.com">
+          <span id="emailPrompt" class="vImgs"></span>
+        </section>
+
+        <label for="ptype">Payment Type*</label>
+        <section>
+          <select id="ptype" style="width:173px;">
+            <option id="card">Credit or Debit</option>
+            <option id="paypal">Paypal</option>
+            <option id="btc">Bitcoin</option>
+            <option id="eth">Etherium</option>
+          </select>
+        </section>
+
+        <label for="txtreply">Additional Message</label>
+        <section>
+          <textarea id="txtreply" name="txtreply" placeholder="Please leave us a message..." style="height:100px; width:460px;"></textarea>
+        </section>
+      </form>
+      <p id="submit1" class="bprocess">Submit Form</p>
+    </section>
+
+<!-- Section 2 - Payment ------------------------------------------------------>
+    <section id="payment" class="formtopic">
+      <h2>Payment</h2>
+
+      <section id="cardpay">
+        <form action="#">
+          <label for="payamt">Payment Amount*</label>
+          <section>
+            <input type="text" id="payamt" name="payamt">
+            <span id="payAmtPrompt" class="vImgs"></span>
+          </section>
+
+          <label for="cardnum">Full Name on Card*</label>
+          <section>
+            <input type="text" id="cardname" class="vImgs" name="cardname" placeholder="Rachel Carson">
+          </section>
+
+          <label for="cardnum">Card Number*</label>
+          <section>
+            <input type="text" id="cardnum" class="vImgs" name="cardnum" placeholder="1234 5678 9012 3456">
+          </section>
+
+          <label for="cardthree">3-Digit Security Code*</label>
+          <section>
+            <input type="text" id="cardthree" class="vImgs" name="cardthree" placeholder="123">
+          </section>
+        </form>
+      </section>
+
+      <p id="submit2" class="bprocess">Confirm Payment</p>
+    </section>
+
+<!-- Section 3 - Thank You Section -------------------------------------------->
+    <section id="confirmation" class="formtopic">
+      <h2>Thank You for your Support!</h2>
+    </section>
+
+    <footer>
+      <p>&copy;Hard Tech Fund 2020</p>
+    </footer>
+  </div>
+</body>
+
+</html>

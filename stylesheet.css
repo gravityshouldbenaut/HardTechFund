@@ -101,6 +101,10 @@ section {
     margin-bottom: 0;
 }
 
+.pinned {
+    background: #56833B;
+}
+
 footer {
     display: flex;
     align-self: center;

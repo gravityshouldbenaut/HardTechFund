@@ -160,6 +160,11 @@ strong {
     font-weight: bold;
 }
 
+em {
+    color: #b53e14;
+    padding-left: 3px;
+}
+
 nav ul li a {
     margin-right: 30px;
     font-weight: 400;
@@ -304,6 +309,14 @@ textarea {
     padding: 5px;
     color: white;
     background: #1c2b4a;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #1c2b4a inset !important;
+    -webkit-text-fill-color: white !important;
 }
 
 ::placeholder {

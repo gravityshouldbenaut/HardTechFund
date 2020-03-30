@@ -17,26 +17,57 @@ div {
 }
 
 nav {
+    display: flex;
+    justify-content: flex-end;
     position: fixed;
     left: 0;
-    overflow-x: hidden;
-    padding: 20px 0 20px 0;
     width: 100%;
     background: rgba(42, 61, 99, 0.5);
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
     transition: all 0.5s ease;
-    text-align: right;
     z-index: 2;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    padding: 20px 0 20px 0;
 }
 
 nav:hover {
     background: rgba(42, 61, 99, 0.8);
 }
 
-.onLink {
-    border-bottom: 3px solid #e9bd1f;
+.subnav {
+    display: block;
+}
+
+.subnav div {
+    transition: all 0.5s ease;
+    position: absolute;
+    top: 100px;
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+    height: 0;
+    opacity: 0;
+}
+
+.subnav.showSubnav div {
+    transition: all 0.5s ease;
+    height: 100%;
+    top: 80px;
+    opacity: 1;
+}
+
+.subnav.showSubnav div a {
+    padding: 10px 0 10px 0;
+}
+
+.subnav.showSubnav div a:hover {
+    color: #568217;
 }
 
 header {
@@ -125,7 +156,7 @@ strong {
     font-weight: bold;
 }
 
-nav a {
+nav ul li a {
     margin-right: 30px;
     font-weight: 400;
     color: #C7D9E5;
@@ -133,9 +164,13 @@ nav a {
     padding-bottom: 16px;
 }
 
-nav a:hover {
+nav ul li a:hover {
     border-bottom: 3px solid rgba(120, 155, 183, 1);
     transition: all 0.5s ease;
+}
+
+.onLink {
+    border-bottom: 3px solid #e9bd1f;
 }
 
 a {
@@ -180,7 +215,7 @@ img {
     width: 200px;
     position: absolute;
     left: 40px;
-    top: 0px;
+    top: 5px;
 }
 
 html {
@@ -190,7 +225,6 @@ html {
     scrollbar-highlight-color: #646464;
     scrollbar-track-color: #15223d;
     scrollbar-shadow-color: #646464;
-    scrollbar-dark-shadow-color: #646464;
 }
 
 ::-webkit-scrollbar {
@@ -224,9 +258,8 @@ html {
 }
 
 
-}
-
 /** Form **********************************************************************/
+
 .formtopic {
     flex: 1 100%;
     display: flex;
@@ -239,6 +272,7 @@ html {
     width: inherit;
     margin-bottom: 80px;
 }
+
 form section {
     padding-bottom: 10px;
     display: flex;
@@ -246,6 +280,7 @@ form section {
     justify-content: flex-start;
     align-items: center;
 }
+
 label,
 input,
 select,
@@ -253,6 +288,7 @@ textarea {
     margin: 15px 10px 15px 0;
     width: 200px;
 }
+
 input,
 select,
 textarea {
@@ -262,6 +298,7 @@ textarea {
     color: white;
     background: rgba(0, 0, 0, 0.3);
 }
+
 .bprocess {
     align-self: flex-start;
     width: fit-content;
@@ -272,6 +309,7 @@ textarea {
     padding: 8px;
     color: #fff;
 }
+
 .vImgs img {
     width: 14px;
 }

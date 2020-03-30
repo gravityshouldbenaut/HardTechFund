@@ -102,8 +102,6 @@ section {
 }
 
 .pinned {
-    background: rgba(86, 131, 59, 0.6);
-    /** ^Alt Color **/
     background: rgba(68, 110, 43, 0.6);
 }
 

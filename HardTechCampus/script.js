@@ -27,24 +27,33 @@ window.onload = function() {
 }
 
 function changebg() { //changes background
-    document.getElementById("intro").onmouseover = function(evt) {
-        document.getElementById("backImg").src = "images/backgrounds/Landing.png";
-    }
     document.getElementById("schedule").onmouseover = function(evt) {
-        document.getElementById("backImg").src = "images/backgrounds/Sections.png";
+        document.getElementById("foreImg").src = "images/backgrounds/Sections.png";
+        document.getElementById("foreImg").style = "opacity:1;";
     }
-    document.getElementById("previousprojects").onmouseover = function(evt) {
-        document.getElementById("backImg").src = "images/backgrounds/Landing.png";
+    document.getElementById("schedule").onmouseout = function(evt) {
+        document.getElementById("foreImg").style = "opacity:0;";
     }
-    document.getElementById("sponsors").onmouseover = function(evt) {
-        document.getElementById("backImg").src = "images/backgrounds/Landing.png";
-    }
+
     document.getElementById("team").onmouseover = function(evt) {
-        document.getElementById("backImg").src = "images/backgrounds/Contact.png";
+        document.getElementById("foreImg").src = "images/backgrounds/Contact.png";
+        document.getElementById("foreImg").style = "opacity:1;";
     }
+    document.getElementById("team").onmouseout = function(evt) {
+        document.getElementById("foreImg").style = "opacity:0;";
+    }
+
+
     document.getElementById("contact").onmouseover = function(evt) {
-        document.getElementById("backImg").src = "images/backgrounds/Contact.png";
+        document.getElementById("foreImg").src = "images/backgrounds/Contact.png";
+        document.getElementById("foreImg").style = "opacity:1;";
     }
+    document.getElementById("contact").onmouseout = function(evt) {
+        document.getElementById("foreImg").style = "opacity:0;";
+    }
+
+
+
 }
 
 //------------------------------------------------------------------------------

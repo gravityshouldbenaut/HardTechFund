@@ -6,6 +6,10 @@ $(document).ready(function() {
         $("nav").addClass("hideNav");
     }
 
+    $(window).resize(function() {
+        $("nav").addClass("hideNav");
+    });
+
     $(".triplebar").on("click", function() {
         showNav = !showNav;
         if (showNav) {

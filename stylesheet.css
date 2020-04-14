@@ -129,13 +129,11 @@ h2:first-child {
     padding-top: 10px;
 }
 
-.schedule ul,
-#team ul {
+.schedule ul, #team ul {
     padding-bottom: 10px;
 }
 
-.schedule h3,
-#team ul {
+.schedule h3, #team ul {
     padding-top: 10px;
 }
 
@@ -291,17 +289,12 @@ form section {
     align-items: center;
 }
 
-label,
-input,
-select,
-textarea {
+label, input, select, textarea {
     margin: 15px 10px 15px 0;
     width: 200px;
 }
 
-input,
-select,
-textarea {
+input, select, textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     font-size: 11pt;
@@ -312,10 +305,7 @@ textarea {
     background: #1c2b4a;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-input:-webkit-autofill:active {
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, input:-webkit-autofill:active {
     -webkit-box-shadow: 0 0 0 30px #1c2b4a inset !important;
     -webkit-text-fill-color: white !important;
 }

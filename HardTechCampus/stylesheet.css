@@ -48,13 +48,7 @@ section {
     padding: 0px 100px 20px 100px;
 }
 
-#title,
-#intro,
-#schedule,
-#previousprojects,
-#sponsors,
-#team,
-#contact {
+#title, #intro, #schedule, #previousprojects, #sponsors, #team, #contact {
     width: inherit;
 }
 
@@ -85,13 +79,11 @@ h2 {
     font-size: 2em;
 }
 
-#schedule ul,
-#team ul {
+#schedule ul, #team ul {
     padding-bottom: 10px;
 }
 
-#schedule h3,
-#team ul {
+#schedule h3, #team ul {
     padding-top: 10px;
 }
 
@@ -219,8 +211,7 @@ img {
     top: -16px;
 }
 
-#backImg,
-#foreImg {
+#backImg, #foreImg {
     width: 100vw;
     position: fixed;
     top: 0px;
@@ -239,13 +230,11 @@ img {
 /** Queries *********************************************************/
 
 @media only screen and (max-width: 950px) {
-    #backImg,
-    #foreImg {
+    #backImg, #foreImg {
         width: auto;
         height: 100vh;
     }
-    nav,
-    nav:hover {
+    nav, nav:hover {
         display: flex;
         flex-direction: column;
         width: 50%;

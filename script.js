@@ -1,4 +1,3 @@
-//------------------------------------------------------------------------------
 $(document).ready(function() {
     $(".subnav").hover(
         function() {
@@ -28,8 +27,26 @@ $(document).ready(function() {
             });
         }
     );
+
+    $("#involvement .subnav div, #involvement .subnav a").hover(
+        function() {
+            $(".subnav a").css({
+                "border-bottom": "3px solid rgba(120, 155, 183, 1)"
+            });
+            $(".subnav div a").css({
+                "border-bottom": "0px",
+            });
+        },
+        function() {
+            $(".subnav a").css({
+                "border-bottom": "3px solid #E9BD1F"
+            });
+            $(".subnav div a").css({
+                "border-bottom": "0px",
+            });
+        }
+    );
+    
 });
 
-window.onload = function() {
-    //document.getElementById("intro").style = "background:green";
-}
+window.onload = function() {}

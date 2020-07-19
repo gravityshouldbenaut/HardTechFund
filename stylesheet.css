@@ -1,6 +1,5 @@
 body {
     width: 100vw;
-    margin: auto;
     font-family: sans-serif;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -13,7 +12,9 @@ div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 100vw;
+    margin: auto;
+    padding: 0 60px;
+    max-width: 800px;
 }
 
 nav {
@@ -84,16 +85,14 @@ section {
 }
 
 .topics {
-    flex: 1 100%;
     display: flex;
+    flex: 1 100%;
     flex-direction: column;
     padding: 24px;
-    margin-bottom: 10px;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-    max-width: 800px;
-    width: inherit;
     margin-bottom: 60px;
+    width: 100%;
 }
 
 .topics:last-child {
@@ -115,6 +114,11 @@ footer {
 
 
 /** Typography ****************************************************************/
+/* 
+h2, h3, p, ul{
+    flex: 1;
+    flex-grow: 100;
+} */
 
 h2 {
     font-family: 'Saira Semi Condensed', sans-serif;

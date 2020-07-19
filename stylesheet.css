@@ -85,6 +85,11 @@ section {
     flex-direction: column;
 }
 
+section div{
+    width: 100%;
+    padding-left: 0;
+}
+
 .topics {
     display: flex;
     flex: 1 100%;
@@ -157,11 +162,12 @@ h3:first-child {
 p {
     line-height: 1.8em;
     padding-bottom: 10px;
-    color: rgb(149, 194, 231);
+    color: rgb(145, 190, 226);
 }
 
 strong {
     font-weight: bold;
+    color: rgb(171, 211, 243);
 }
 
 em {
@@ -221,7 +227,11 @@ header img {
 
 img {
     width: 100%;
-    padding: 10px 0 10px 0;
+    margin: 10px 0;
+}
+
+img, iframe{
+    border-radius: 8px;
 }
 
 .logo {
@@ -249,9 +259,7 @@ html {
     background-color: #56833B;
 }
 
-
 /* Tabs on top and bottom of scrollbar */
-
 ::-webkit-scrollbar-track {
     background-color: #646464;
 }
@@ -269,7 +277,6 @@ html {
 ::-webkit-scrollbar-corner {
     background-color: #646464;
 }
-
 
 /** Form **********************************************************************/
 

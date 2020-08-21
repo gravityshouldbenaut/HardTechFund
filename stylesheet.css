@@ -441,17 +441,19 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     border-bottom: 3px solid #FF970F;
 }
 
-#twitterpolls{
+.pollsection{
     display: flex;
-    flex-wrap: row-wrap;
     overflow-x: scroll;
+    width: auto;
 }
 
-.twitter-tweet{
-    width: 800px;
+.pollsection div{
+    padding-right:30px;
 }
 
-
+.pollsection div:last-child{
+    padding-right:0;
+}
 
 /** Form **********************************************************************/
 
@@ -462,5 +464,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     
     #ndvi img, #ndvi p{
         width:100%;
+    }
+
+    .pollsection{
+        flex-direction: column;
+        width: auto;
     }
 }

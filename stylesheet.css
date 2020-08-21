@@ -288,6 +288,7 @@ html {
 
 ::-webkit-scrollbar-button {
     background-color: #56833B;
+    width: 0;
 }
 
 /* Tabs on top and bottom of scrollbar */
@@ -438,6 +439,16 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .htc .onLink {
     border-bottom: 3px solid #FF970F;
+}
+
+#twitterpolls{
+    display: flex;
+    flex-wrap: row-wrap;
+    overflow-x: scroll;
+}
+
+.twitter-tweet{
+    width: 800px;
 }
 
 

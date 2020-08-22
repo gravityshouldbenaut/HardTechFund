@@ -441,9 +441,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     border-bottom: 3px solid #FF970F;
 }
 
+/** Hyperloop Symposium **********************************************************************/
+
 .pollsection{
     display: flex;
-    overflow-x: scroll;
     width: auto;
 }
 
@@ -457,6 +458,23 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 #paperresults{
     min-height: 800px;
+}
+
+.participants div{
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.participants div a, .participants div a:hover{
+    width: 100px;
+    margin: auto auto;
+    border-radius:0;
+    border-bottom:0;
+}
+
+.participants div a img{
+    border-radius:0;
 }
 
 /** Form **********************************************************************/

@@ -580,4 +580,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         flex-direction: column;
         width: auto;
     }
+    
+    h2{
+        font-family: 'Roboto', sans-serif;
+    }
 }

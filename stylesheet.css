@@ -455,6 +455,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     padding-right:0;
 }
 
+#paperresults{
+    min-height: 800px;
+}
+
 /** Form **********************************************************************/
 
 @media only screen and (max-width: 768px) {

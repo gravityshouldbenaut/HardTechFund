@@ -57,6 +57,25 @@ $(document).ready(function() {
         }
     );
     
+    if($(window).width()<768){
+        $(".showSubnav a.navinvolvement").css({ "border-bottom": "0px" })
+    }    
+
+    var slidenavout = false;
+    $("#menu").on("click",
+        function(){
+            slidenavout = !slidenavout;
+            if(slidenavout){
+                $("nav ul").css({ "right":"0%" })
+            }else{
+                $("nav ul").css({ "right":"-100%" })
+            }
+        }
+    )
+    $( window ).resize(function() {
+        slidenavout = false;
+        $("nav ul").css({ "right":"-100%" })
+    });
 });
 
 window.onload = function() {}

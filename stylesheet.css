@@ -589,6 +589,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     
     h2{
         font-family: 'Roboto', sans-serif;
+        font-weight: normal;
     }
     .livestream{
         width: 100%;

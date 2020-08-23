@@ -410,12 +410,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .participants div{
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-direction: row; 
+    flex-wrap: wrap;
 }
 
 .participants div a, .participants div a:hover{
     width: 100px;
+    padding: 20px;
     margin: auto auto;
     border-radius:0;
     border-bottom:0;

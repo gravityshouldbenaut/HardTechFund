@@ -386,6 +386,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 /** Hyperloop Symposium **********************************************************************/
 
+.livestream{
+    width:560px;
+    height:315px;
+}
+
 .pollsection{
     display: flex;
     width: auto;
@@ -583,5 +588,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     
     h2{
         font-family: 'Roboto', sans-serif;
+    }
+    .livestream{
+        width: 100%;
     }
 }

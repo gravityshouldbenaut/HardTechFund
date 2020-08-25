@@ -11,7 +11,7 @@ $(document).ready(function() {
         }
     );
 
-    $(".subnav div, .subnav a").hover(
+    $(".navinvolvement div, .navinvolvement a, .navhyperloop div, .navhyperloop a").hover(
         function() {
             $(".subnav a").css({
                 "border-bottom": "3px solid rgba(120, 155, 183, 1)"
@@ -28,37 +28,37 @@ $(document).ready(function() {
         }
     );
 
-    $("#involvement .subnav div, #involvement .subnav a").hover(
-        function() {
-            $(".subnav a").css({
-                "border-bottom": "3px solid rgba(120, 155, 183, 1)"
-            });
+    // $("#involvement .subnav div, #involvement .subnav a").hover(
+    //     function() {
+    //         $(".subnav a").css({
+    //             "border-bottom": "3px solid rgba(120, 155, 183, 1)"
+    //         });
 
-            $(".htc .subnav a").css({
-                "border-bottom": "3px solid #76CCBC"
-            });
+    //         $(".htc .subnav a").css({
+    //             "border-bottom": "3px solid #76CCBC"
+    //         });
 
-            $(".subnav div a, .htc .subnav div a").css({
-                "border-bottom": "0px",
-            });
-        },
-        function() {
-            $(".subnav a").css({
-                "border-bottom": "3px solid #E9BD1F"
-            });
+    //         $(".subnav div a, .htc .subnav div a").css({
+    //             "border-bottom": "0px",
+    //         });
+    //     },
+    //     function() {
+    //         $(".subnav a").css({
+    //             "border-bottom": "3px solid #E9BD1F"
+    //         });
 
-            $(".htc .subnav a").css({
-                "border-bottom": "3px solid #FF970F"
-            });
+    //         $(".htc .subnav a").css({
+    //             "border-bottom": "3px solid #FF970F"
+    //         });
 
-            $(".subnav div a, .htc .subnav div a").css({
-                "border-bottom": "0px",
-            });
-        }
-    );
+    //         $(".subnav div a, .htc .subnav div a").css({
+    //             "border-bottom": "0px",
+    //         });
+    //     }
+    // );
     
     if($(window).width()<768){
-        $(".showSubnav a.navinvolvement").css({ "border-bottom": "0px" })
+        $(".showSubnav a.dropdown").css({ "border-bottom": "0px" })
     }    
 
     var slidenavout = false;

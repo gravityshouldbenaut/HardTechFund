@@ -424,7 +424,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .participants div a, .participants div a:hover{
-    width: 100px;
     padding: 20px;
     margin: auto auto;
     border-radius:0;
@@ -433,6 +432,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .participants div a img{
     border-radius:0;
+    height: 40px;
+    width: auto;
+}
+
+.participants div a.square img{
+    width: 100px;
+    height: auto;
 }
 
 /** Form **********************************************************************/

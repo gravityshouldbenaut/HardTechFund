@@ -633,4 +633,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     .livestream{
         width: 100%;
     }
+    .persongallery{
+        flex-direction: column;
+    }
+    .personcard{
+        width: 100%;
+    }
+    .personcard:first-child{
+        margin-bottom:60px;
+    }
 }

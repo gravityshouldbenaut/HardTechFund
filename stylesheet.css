@@ -246,6 +246,29 @@ img, iframe{
     top: 5px;
 }
 
+.persongallery{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+    align-content: space-around;
+    justify-content: space-around;
+}
+
+.personcard {
+    width: 40%;
+    padding: 0;
+}
+
+.personcard span{
+    width: 100%;
+}
+
+.personcard span img{
+    object-fit: cover;
+    height: 400px;
+}
+
 html {
     scrollbar-face-color: #646464;
     scrollbar-base-color: #646464;

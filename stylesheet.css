@@ -251,12 +251,12 @@ img, iframe{
     flex-direction: row;
     margin: 0 auto;
     padding: 0;
-    align-content: space-around;
     justify-content: space-around;
 }
 
 .personcard {
-    width: 40%;
+    margin-top:0;
+    width: 30%;
     padding: 0;
 }
 
@@ -266,7 +266,11 @@ img, iframe{
 
 .personcard span img{
     object-fit: cover;
-    height: 400px;
+    height: 300px;
+}
+
+.personcard p{
+    font-size: 14px;
 }
 
 html {
@@ -638,10 +642,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         width: 100%;
     }
     .persongallery{
-        flex-direction: column;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
     }
     .personcard{
-        width: 100%;
+        min-width: 280px;
+        padding: 40px 20px 0 20px;
     }
     .personcard:first-child{
         margin-bottom:60px;

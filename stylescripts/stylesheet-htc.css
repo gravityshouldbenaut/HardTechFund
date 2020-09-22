@@ -36,16 +36,26 @@
     background: #3d5a5fe8;
 }
 
+.htc p, .htc nav a{
+    color: #ddd;
+}
+
 .htc a {
     color: #FF970F;
 }
 
-.htc .subnav:hover a {
+.htc .subnav:hover a, .htc .subnav:hover div a span {
     border-bottom: none;
+    background: none;
 }
 
 .htc .onLink {
     border-bottom: 3px solid #FF970F;
+}
+
+::selection {
+    background: #FF970Faa;
+    color: #fff;
 }
 
 /** Queries **********************************************************************/
@@ -62,10 +72,6 @@
 
     .htc .subnav.showSubnav div a:hover span{
         background: #3d5a5fff;
-    }
-
-    .htc p, .htc nav a{
-        color: #ddd;
     }
 
     .htc nav ul li a:hover {

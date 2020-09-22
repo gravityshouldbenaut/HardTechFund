@@ -199,7 +199,7 @@ nav ul li a:hover {
     border-bottom: 3px solid #e9bd1f;
 }
 
-a {
+a, a::selection {
     text-decoration: none;
     color: #E9BD1F;
     font-weight: bold;
@@ -240,6 +240,11 @@ li {
     background: #56833B88;
     color: #C7D9E5;
     cursor: pointer;
+}
+
+::selection {
+    background: #789BB740;
+    color: #fff;
 }
 
 

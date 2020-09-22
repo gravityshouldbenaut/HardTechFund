@@ -350,51 +350,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     width: 14px;
 }
 
-/** Hard Tech Campus **********************************************************/
-
-.htc{
-    color: #ddd;
-    background: #053942;
-    background-image: url(HardTechCampus/images/backgrounds/Landing.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.htc header img {
-    width: 86vw;
-    max-width: 800px;
-    padding: 120px 0 60px 0;
-}
-
-.htc .topics {
-    background: #132022ad;
-}
-
-.htc h2{
-    color: #BAF4E1;
-}
-
-.htc h3{
-    font-size: 1.2em;
-    color: #76CCBC;
-}
-
-.htc nav{
-    background: #3d5a5f9d;
-}
-
-.htc nav:hover{
-    background: #3d5a5fe8;
-}
-
-.htc a {
-    color: #FF970F;
-}
-
-.htc .onLink {
-    border-bottom: 3px solid #FF970F;
-}
-
 /** Form **********************************************************************/
 
 #menu{
@@ -404,6 +359,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     margin-right:30px;
     top:8px;
 }
+
+/** Queries *********************************************************/
 
 @media only screen and (min-width: 769px) {
     .subnav {
@@ -440,34 +397,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         border-radius: 4px;
         background: #1c2c4a00;
     }
-
-    /* HTC */
-
-    .htc .subnav.showSubnav div a span{
-        margin: -4px;
-        padding: 2px 4px;
-        border-radius: 4px;
-        background: #3d5a5f00;
-    }
-
-    .htc .subnav.showSubnav div a:hover span{
-        background: #3d5a5fff;
-    }
-
-    .htc p, .htc nav a{
-        color: #ddd;
-    }
-
-    .htc nav ul li a:hover {
-        border-bottom: 3px solid #76CCBC;
-    }
-
-    .htc .subnav div a:hover{
-        color: #FF970F;
-    }
 }
-
-/** Queries *********************************************************/
 
 @media only screen and (max-width: 768px) {
     #menu{
@@ -484,10 +414,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         width: 300px;
         height: 100vh;
         transition: all 0.5s ease;
-    }
-
-    .htc nav ul{
-        background: #3d5a5fcc;
     }
 
     nav ul li{

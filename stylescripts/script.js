@@ -27,39 +27,14 @@ $(document).ready(function() {
             });
         }
     );
-
-    // $("#involvement .subnav div, #involvement .subnav a").hover(
-    //     function() {
-    //         $(".subnav a").css({
-    //             "border-bottom": "3px solid rgba(120, 155, 183, 1)"
-    //         });
-
-    //         $(".htc .subnav a").css({
-    //             "border-bottom": "3px solid #76CCBC"
-    //         });
-
-    //         $(".subnav div a, .htc .subnav div a").css({
-    //             "border-bottom": "0px",
-    //         });
-    //     },
-    //     function() {
-    //         $(".subnav a").css({
-    //             "border-bottom": "3px solid #E9BD1F"
-    //         });
-
-    //         $(".htc .subnav a").css({
-    //             "border-bottom": "3px solid #FF970F"
-    //         });
-
-    //         $(".subnav div a, .htc .subnav div a").css({
-    //             "border-bottom": "0px",
-    //         });
-    //     }
-    // );
     
     if($(window).width()<768){
         $(".showSubnav a.dropdown").css({ "border-bottom": "0px" })
     }    
+
+    $( ".readmore" ).click(function() {
+        alert( "Full papers coming soon, hang tight! 🚄" );
+    });
 
     var slidenavout = false;
     $("#menu").on("click",

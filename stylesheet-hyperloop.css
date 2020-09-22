@@ -1,0 +1,158 @@
+/** Images and Design *********************************************************/
+
+.persongallery{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.personcard {
+    margin-top:0;
+    width: 30%;
+    padding: 0;
+}
+
+.personcard span{
+    width: 100%;
+}
+
+.personcard span img{
+    object-fit: cover;
+    height: 300px;
+}
+
+.personcard p{
+    font-size: 14px;
+}
+
+/** Images and Design *********************************************************/
+
+header img {
+    width: 90vw;
+    padding: 80px 0 40px 0;
+}
+
+img {
+    width: 100%;
+    margin: 10px 0;
+}
+
+img, iframe{
+    border-radius: 8px;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    left: 40px;
+    top: 5px;
+}
+
+.persongallery{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.personcard {
+    margin-top:0;
+    width: 30%;
+    padding: 0;
+}
+
+.personcard span{
+    width: 100%;
+}
+
+.personcard span img{
+    object-fit: cover;
+    height: 300px;
+}
+
+.personcard p{
+    font-size: 14px;
+}
+
+/** Hyperloop Symposium **********************************************************************/
+
+.livestream{
+    width:560px;
+    height:315px;
+}
+
+.pollsection{
+    display: flex;
+    width: auto;
+}
+
+.pollsection div{
+    padding-right:30px;
+}
+
+.pollsection div:last-child{
+    padding-right:0;
+}
+
+#paperresults{
+    min-height: 800px;
+}
+
+#paperresults2{
+    min-height: 300px;
+}
+
+.participants div{
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+.participants div a, .participants div a:hover{
+    padding: 20px;
+    margin: auto auto;
+    border-radius:0;
+    border-bottom:0;
+}
+
+.participants div a img{
+    border-radius:0;
+    height: 40px;
+    width: auto;
+}
+
+.participants div a.square img{
+    width: 100px;
+    height: auto;
+}
+
+/** Queries *********************************************************/
+
+@media only screen and (max-width: 768px) {
+    .navhyperloop.onLink.dropdown{
+        margin-right: 4px;
+    }
+
+    .pollsection{
+        flex-direction: column;
+        width: auto;
+    }
+    
+    .livestream{
+        width: 100%;
+    }
+    .persongallery{
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+    }
+    .personcard{
+        min-width: 280px;
+        padding: 40px 20px 0 20px;
+    }
+    .personcard:first-child{
+        margin-bottom:60px;
+    }
+}

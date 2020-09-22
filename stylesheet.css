@@ -248,33 +248,6 @@ img, iframe{
     top: 5px;
 }
 
-.persongallery{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    padding: 0;
-    justify-content: space-around;
-}
-
-.personcard {
-    margin-top:0;
-    width: 30%;
-    padding: 0;
-}
-
-.personcard span{
-    width: 100%;
-}
-
-.personcard span img{
-    object-fit: cover;
-    height: 300px;
-}
-
-.personcard p{
-    font-size: 14px;
-}
-
 html {
     scrollbar-face-color: #646464;
     scrollbar-base-color: #646464;
@@ -422,58 +395,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     border-bottom: 3px solid #FF970F;
 }
 
-/** Hyperloop Symposium **********************************************************************/
-
-.livestream{
-    width:560px;
-    height:315px;
-}
-
-.pollsection{
-    display: flex;
-    width: auto;
-}
-
-.pollsection div{
-    padding-right:30px;
-}
-
-.pollsection div:last-child{
-    padding-right:0;
-}
-
-#paperresults{
-    min-height: 800px;
-}
-
-#paperresults2{
-    min-height: 300px;
-}
-
-.participants div{
-    display: flex;
-    flex-direction: row; 
-    flex-wrap: wrap;
-}
-
-.participants div a, .participants div a:hover{
-    padding: 20px;
-    margin: auto auto;
-    border-radius:0;
-    border-bottom:0;
-}
-
-.participants div a img{
-    border-radius:0;
-    height: 40px;
-    width: auto;
-}
-
-.participants div a.square img{
-    width: 100px;
-    height: auto;
-}
-
 /** Form **********************************************************************/
 
 #menu{
@@ -545,6 +466,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         color: #FF970F;
     }
 }
+
+/** Queries *********************************************************/
 
 @media only screen and (max-width: 768px) {
     #menu{
@@ -623,10 +546,6 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         background: none;
     }
 
-    .navhyperloop.onLink.dropdown{
-        margin-right: 4px;
-    }
-
     #ndvi{
         display: block;
     }
@@ -634,28 +553,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     #ndvi img, #ndvi p{
         width:100%;
     }
-
-    .pollsection{
-        flex-direction: column;
-        width: auto;
-    }
     
     h2{
         font-family: 'Roboto', sans-serif;
         font-weight: normal;
-    }
-    .livestream{
-        width: 100%;
-    }
-    .persongallery{
-        /* flex-direction: column; */
-        flex-wrap: wrap;
-    }
-    .personcard{
-        min-width: 280px;
-        padding: 40px 20px 0 20px;
-    }
-    .personcard:first-child{
-        margin-bottom:60px;
     }
 }

@@ -53,9 +53,21 @@
     border-bottom: 3px solid #FF970F;
 }
 
+/** Structure **********************************************************************/
+
 ::selection {
     background: #FF970Faa;
     color: #fff;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: #053942;
+}
+
+::-webkit-scrollbar-thumb {
+    height: 50px;
+    background-color: #76CCBCaa;
+    border-radius: 3px;
 }
 
 /** Queries **********************************************************************/

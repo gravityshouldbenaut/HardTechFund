@@ -49,9 +49,11 @@ nav:hover {
     color: #fff;
 }
 
-.hyperloopsubnav div{
+.hyperloopsubnav > div{
     width: 200px;
-    right: 0;
+    right: 0px;
+    top: 16px;
+    margin-top: 30px;
 }
 
 header {
@@ -619,6 +621,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
         margin: 0;
         padding: 0;
         background: none;
+    }
+
+    .navhyperloop.onLink.dropdown{
+        margin-right: 4px;
     }
 
     #ndvi{

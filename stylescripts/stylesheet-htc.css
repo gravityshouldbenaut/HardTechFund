@@ -3,7 +3,8 @@
 .htc{
     color: #ddd;
     background: #053942;
-    background-image: url(HardTechCampus/images/backgrounds/Landing.png);
+    background-image: url(../HardTechCampus/images/backgrounds/Landing.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }

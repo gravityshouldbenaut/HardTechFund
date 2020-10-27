@@ -32,9 +32,10 @@ $(document).ready(function() {
         $(".showSubnav a.dropdown").css({ "border-bottom": "0px" })
     }    
 
-    $( ".readmore" ).click(function() {
-        alert( "Full papers coming soon, hang tight! 🚄" );
+    $( ".readmore" ).on('click', () => {
+        //insert readmore code here. For now, placeholder:
     });
+    $( ".readmore" ).css({"display":"none"})
 
     var slidenavout = false;
     $("#menu").on("click",

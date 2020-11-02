@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(() => {
     $(".subnav").hover(
         function() {
             $(this).addClass("showSubnav");
@@ -32,11 +32,41 @@ $(document).ready(function() {
         $(".showSubnav a.dropdown").css({ "border-bottom": "0px" })
     }    
 
-    $( ".readmore" ).on('click', () => {
-        //insert readmore code here. For now, placeholder:
-    });
-    $( ".readmore" ).css({"display":"none"})
+    // Papers Toggling - will simplify code in the future
+    let papers = [false, false, false, false, false]
+    $("#paper1 .readmore").click(() => { 
+        $( "#paper1 .readmore" ).toggleClass("showpaper"); 
+        papers[1] = !papers[1];
+        if(papers[1]){  $( "#paper1 .readmore" ).html("Hide Paper"); } 
+        else { $( "#paper1 .readmore" ).html("Show Paper"); }
+    })
+    $("#paper2 .readmore").click(() => { 
+        $( "#paper2 .readmore" ).toggleClass("showpaper"); 
+        papers[1] = !papers[1];
+        if(papers[1]){  $( "#paper2 .readmore" ).html("Hide Paper"); } 
+        else { $( "#paper2 .readmore" ).html("Show Paper"); }
+    })
+    $("#paper3 .readmore").click(() => { 
+        $( "#paper3 .readmore" ).toggleClass("showpaper"); 
+        papers[1] = !papers[1];
+        if(papers[1]){  $( "#paper3 .readmore" ).html("Hide Paper"); } 
+        else { $( "#paper3 .readmore" ).html("Show Paper"); }
+    })
+    $("#paper4 .readmore").click(() => { 
+        $( "#paper4 .readmore" ).toggleClass("showpaper"); 
+        papers[1] = !papers[1];
+        if(papers[1]){  $( "#paper4 .readmore" ).html("Hide Paper"); } 
+        else { $( "#paper4 .readmore" ).html("Show Paper"); }
+    })
+    $("#paper5 .readmore").click(() => { 
+        $( "#paper5 .readmore" ).toggleClass("showpaper"); 
+        papers[1] = !papers[1];
+        if(papers[1]){  $( "#paper5 .readmore" ).html("Hide Paper"); } 
+        else { $( "#paper5 .readmore" ).html("Show Paper"); }
+    })
 
+
+    // Nav Sliding
     var slidenavout = false;
     $("#menu").on("click",
         function(){

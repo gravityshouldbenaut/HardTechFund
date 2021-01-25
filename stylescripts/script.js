@@ -82,6 +82,6 @@ $(document).ready(() => {
         slidenavout = false;
         $("nav ul").css({ "right":"-100%" })
     });
-});
 
-window.onload = function() {}
+    $("#currentYear").text(new Date().getFullYear()); // updates copyright with current year
+});
